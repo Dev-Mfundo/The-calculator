@@ -8,7 +8,8 @@ body{
 .branding h1{
     color: #949494;
     border: 1px solid #949494;
-    padding: 10px;
+    padding: 7px;
+    margin: 0px;
 }
 main{
     display: flex;
@@ -16,24 +17,84 @@ main{
     min-height: 75vh;
 }
 fieldset{
-    width: 300px;
+    width: 257px;
     background-color: rgb(26, 33, 66);
     border: 0px;
     border-radius: 15px;
     padding: 10px;
-    margin: 7% auto;
+    margin: 3px auto;
 }
 fieldset legend{
     background-color: rgb(26, 33, 66);
     font-size: 1.2rem;
     color: #70858f;
 }
+fieldset section{
+    display: flex;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+fieldset nav{
+    position: relative;
+}
+fieldset nav button:nth-child(1){
+    position: absolute;
+    left: 210px;
+}
+fieldset button{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+fieldset button:hover{
+    background-color: lightslategray;
+}
+fieldset button:active{
+    background-color: rgb(121, 148, 185);
+}
+fieldset input{
+    display: block;
+    margin: 5px auto;
+    width: 95%;
+    height: 50px;
+    font-size: 1.3rem;
+    text-align: end;
+    border: 0px;
+    outline: 0px;
+    border-radius: 15px;
+}
+fieldset input::placeholder{
+    text-align: end;
+    font-size: 1.3rem;
+    border: 0px;
+    outline: 0px;
+    padding: 7px;
+}
+fieldset input:focus{
+    border: 0px;
+    outline: 0px;
+}
+fieldset input:active{
+    border: 0px;
+    outline: 0px;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+}
 footer{
     display: block;
     border: 1px solid #949494;
-    padding: 10px;
+    margin: 0;
 }
 footer p{
     color: #949494;
     text-align: center;
+    font-size: 1.2rem;
+    padding: 3px;
 }
